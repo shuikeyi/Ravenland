@@ -15,7 +15,7 @@ import android.view.ViewGroup
 abstract class BaseFragment : Fragment(),UiAction {
 
     protected var attachedActivty : Activity? = null
-    open val uiDelegater by lazy {
+    open val uiDelegate by lazy {
         UiBaseDelegate(this.activity)
     }
 
@@ -39,17 +39,17 @@ abstract class BaseFragment : Fragment(),UiAction {
 
     override fun onResume() {
         super.onResume()
-        uiDelegater.resume()
+        uiDelegate.resume()
     }
 
     override fun onPause() {
         super.onPause()
-        uiDelegater.pause()
+        uiDelegate.pause()
     }
 
     override fun onStop() {
         super.onStop()
-        uiDelegater.stop()
+        uiDelegate.stop()
     }
 
     override fun onDetach() {
@@ -59,6 +59,6 @@ abstract class BaseFragment : Fragment(),UiAction {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        uiDelegater.destroy()
+        uiDelegate.destroy()
     }
 }

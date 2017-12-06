@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity
  */
 abstract class BaseActivity : AppCompatActivity(),UiAction {
 
-    open val uiDelegater by lazy {
+    open val uiDelegate by lazy {
         UiBaseDelegate(this)
     }
 
@@ -23,22 +23,22 @@ abstract class BaseActivity : AppCompatActivity(),UiAction {
 
     override fun onResume() {
         super.onResume()
-        uiDelegater.resume()
+        uiDelegate.resume()
     }
 
     override fun onPause() {
         super.onPause()
-        uiDelegater.pause()
+        uiDelegate.pause()
     }
 
     override fun onStop() {
         super.onStop()
-        uiDelegater.pause()
+        uiDelegate.pause()
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        uiDelegater.destroy()
+        uiDelegate.destroy()
     }
 
 }
