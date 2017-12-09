@@ -128,6 +128,7 @@
     <orderEntry type="library" name="com.android.support:support-core-utils-26.0.0-beta1" level="project" />
     <orderEntry type="library" name="com.android.support:support-vector-drawable-26.0.0-beta1" level="project" />
     <orderEntry type="library" scope="TEST" name="junit:junit:4.12@jar" level="project" />
+    <orderEntry type="library" name="org.jetbrains.kotlinx:kotlinx-coroutines-core:0.16@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="javax.inject:javax.inject:1@jar" level="project" />
     <orderEntry type="library" scope="TEST" name="com.squareup:javawriter:2.1.1@jar" level="project" />
     <orderEntry type="library" name="com.android.support:support-v4-26.0.0-beta1" level="project" />
